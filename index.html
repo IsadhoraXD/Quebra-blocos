@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quebra Blocos Egípcio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Vídeo de fundo em loop (sem áudio) -->
+    <video autoplay muted loop id="bg-video">
+        <source src="Mídias/fundo.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+    </video>
+
+    <h1>QUEBRA BLOCOS</h1>
+    <p>Use <strong>A / D</strong>, <strong>Setas</strong> ou o <strong>Mouse</strong> para mover a plataforma.</p>
+
+    <!-- Canvas do Jogo -->
+    <canvas id="blocos" width="560" height="620"></canvas>
+
+    <!-- Elementos de Áudio -->
+    <audio id="bg-music" src="Mídias/audio.mp3" loop></audio>   
+    <audio id="sfx-Raquete" src="Mídias/raquete.mp3"></audio>
+    <audio id="sfx-block" src="Mídias/block.mp3"></audio>
+    <audio id="sfx-blockgold" src="Mídias/blockgold.mp3"></audio>
+    <audio id="sfx-powerup" src="Mídias/powerup.mp3"></audio>
+    <audio id="sfx-gameover" src="Mídias/gameover.mp3"></audio>
+    <audio id="sfx-level" src="Mídias/level.mp3"></audio>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
